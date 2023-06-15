@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DOWNHILL</title>
+    <link rel="icon" href="./assets/icon.png">
+</head>
+<body>
+    <main>
+        <header class="nav-contenedor">
+            <nav class="navbar">
+                <img src="./assets/icon.png" alt="logotipo">
+                <h1 class="ver-carrito" id="verCarrito"><img src="./assets/carrito.png" width="55px" alt=""></h1>
+            </nav>
+        </header>
+        <section class="principal">
+            <div class="principal-container">
+                <h1>Downhill</h1>
+                <p>Elegí la mejor bicicleta del mercado</p>
+        </div>
+        </section>
+        <div id="shopContent" class="shop-content"></div>
+        <div id="modal-container" class="modal-container"></div>
+    <div class="exchange">
+        <img src="./assets/Cambio.png" alt="" class="conversor-imagen">
+        <h1 class="h1">Conversor de moneda</h1>
+        <p class="p">Escoje la moneda y la cantidad para realizar la conversion</p>
+        <div class="container">
+            <div class="moneda">
+                <select id="moneda-uno">
+                    <option value="ARS">ARS</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD" selected>USD</option>   
+                </select>
+                <input 
+                type="number" 
+                id="cantidad-uno" 
+                placeholder="0"  
+                value="1">
+            </div>
+            <div class="taza-cambio-container">
+                <button class="btn" id="taza">
+                    CAMBIO
+                </button>
+                <div class="cambio" id="cambio"></div>
+            </div>
+            <div class="moneda">
+                <select id="moneda-dos">
+                    <option value="ARS" selected>ARS</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>    
+                </select>
+                <input 
+                type="number" 
+                id="cantidad-dos" 
+                placeholder="0">
+            </div>
+        </div>
+    </div>    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/productos.js"></script>
+    <script src="./js/carrito.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/apiexchange.js"></script>
+</body>
+</html>
